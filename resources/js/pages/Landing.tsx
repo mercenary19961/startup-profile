@@ -6,6 +6,7 @@ import Testimonials from '@/components/landing/Testimonials';
 import About from '@/components/landing/About';
 import Contact from '@/components/landing/Contact';
 import Footer from '@/components/landing/Footer';
+import SmoothScroll from '@/components/SmoothScroll';
 
 export default function Landing() {
     return (
@@ -59,19 +60,21 @@ export default function Landing() {
                 </script>
             </Head>
             
-            <div className="min-h-screen bg-background text-foreground font-sans antialiased selection:bg-primary/20 selection:text-primary">
-                <Navbar />
-                
-                <main>
-                    <Hero />
-                    <Services />
-                    <Testimonials />
-                    <About />
-                    <Contact />
-                </main>
+            <SmoothScroll>
+                <div className="min-h-screen bg-background text-foreground font-sans antialiased selection:bg-primary/20 selection:text-primary">
+                    <Navbar />
+                    
+                    <main>
+                        <Hero />
+                        <Services />
+                        <Testimonials />
+                        <About />
+                        <Contact />
+                    </main>
 
-                <Footer />
-            </div>
+                    <Footer />
+                </div>
+            </SmoothScroll>
         </>
     );
 }

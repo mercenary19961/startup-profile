@@ -60,16 +60,16 @@ export default function Contact() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div className="space-y-2">
                                     <label htmlFor="first-name" className="text-sm font-medium">First Name</label>
-                                    <input type="text" id="first-name" className="w-full px-4 py-2 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="John" />
+                                    <input type="text" id="first-name" className="w-full px-4 py-2 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Mohammad" />
                                 </div>
                                 <div className="space-y-2">
                                     <label htmlFor="last-name" className="text-sm font-medium">Last Name</label>
-                                    <input type="text" id="last-name" className="w-full px-4 py-2 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Doe" />
+                                    <input type="text" id="last-name" className="w-full px-4 py-2 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Al-Hajj" />
                                 </div>
                             </div>
                             <div className="space-y-2">
                                 <label htmlFor="email" className="text-sm font-medium">Email</label>
-                                <input type="email" id="email" className="w-full px-4 py-2 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="john@example.com" />
+                                <input type="email" id="email" className="w-full px-4 py-2 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="mohammad@example.com" />
                             </div>
                             <div className="space-y-2">
                                 <label htmlFor="message" className="text-sm font-medium">Message</label>
