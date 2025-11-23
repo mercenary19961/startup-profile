@@ -1,0 +1,56 @@
+
+> build
+> vite build
+
+[36mvite v7.1.5 [32mbuilding for production...[36m[39m
+[plugin @laravel/vite-plugin-wayfinder] Types generated for actions, routes, form variants
+transforming...
+[32m✓[39m 3105 modules transformed.
+[31m✗[39m Build failed in 6.58s
+[31merror during build:
+[31mresources/js/components/nav-footer.tsx (9:9): "resolveUrl" is not exported by "resources/js/lib/utils.ts", imported by "resources/js/components/nav-footer.tsx".[31m
+file: [36mC:/Users/sabba/Desktop/projects/startup-profile/resources/js/components/nav-footer.tsx:9:9[31m
+[33m
+ 7:     SidebarMenuItem,
+ 8: } from '@/components/ui/sidebar';
+ 9: import { resolveUrl } from '@/lib/utils';
+             ^
+10: import { type NavItem } from '@/types';
+11: import { type ComponentPropsWithoutRef } from 'react';
+[31m
+    at getRollupError (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at Module.error (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:16875:16)
+    at Module.traceVariable (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:17327:29)
+    at ModuleScope.findVariable (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:14997:39)
+    at FunctionScope.findVariable (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:5620:38)
+    at FunctionBodyScope.findVariable (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:5620:38)
+    at Identifier.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:5394:40)
+    at CallExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2785:23)
+    at CallExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:12058:15)
+    at Property.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2785:23)
+    at ObjectExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2781:28)
+    at CallExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2781:28)
+    at CallExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:12058:15)
+    at Property.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2785:23)
+    at ObjectExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2781:28)
+    at CallExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2781:28)
+    at CallExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:12058:15)
+    at Property.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2785:23)
+    at ObjectExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2781:28)
+    at CallExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2781:28)
+    at CallExpression.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:12058:15)
+    at ReturnStatement.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2785:23)
+    at BlockStatement.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2781:28)
+    at FunctionDeclaration.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2785:23)
+    at Program.bind (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:2781:28)
+    at Module.bindReferences (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:16854:18)
+    at Graph.sortModules (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:22646:20)
+    at Graph.build (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:22544:14)
+    at async file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:23234:13
+    at async catchUnfinishedHookActions (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:22705:16)
+    at async rollupInternal (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/rollup/dist/es/shared/node-entry.js:23229:5)
+    at async buildEnvironment (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:34244:12)
+    at async Object.build (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:34614:19)
+    at async Object.buildApp (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/vite/dist/node/chunks/dep-M_KD0XSK.js:34611:153)
+    at async CAC.<anonymous> (file:///C:/Users/sabba/Desktop/projects/startup-profile/node_modules/vite/dist/node/cli.js:648:3)[39m
