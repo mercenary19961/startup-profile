@@ -1,0 +1,22 @@
+{
+	"name": "Startup Profile (Laravel)",
+	"image": "mcr.microsoft.com/devcontainers/php:8.2",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"bmewburn.vscode-intelephense-client",
+				"mikestead.dotenv",
+				"bradlc.vscode-tailwindcss"
+			]
+		}
+	},
+	"postCreateCommand": "composer install && npm install && cp -n .env.example .env || true && php artisan key:generate && touch database/database.sqlite && php artisan migrate --force",
+	"remoteUser": "vscode"
+}

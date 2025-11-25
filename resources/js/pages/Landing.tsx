@@ -4,6 +4,7 @@ import Hero from '@/components/landing/Hero';
 import Services from '@/components/landing/Services';
 import Testimonials from '@/components/landing/Testimonials';
 import About from '@/components/landing/About';
+import TechnicalCapabilities from '@/components/landing/TechnicalCapabilities';
 import Contact from '@/components/landing/Contact';
 import Footer from '@/components/landing/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
@@ -69,6 +70,7 @@ export default function Landing() {
                         <Services />
                         <Testimonials />
                         <About />
+                        <TechnicalCapabilities />
                         <Contact />
                     </main>
 
