@@ -1,15 +1,12 @@
 {
-	"name": "Startup Profile (Laravel)",
-	"image": "mcr.microsoft.com/devcontainers/php:8.2",
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {
-			"version": "lts"
-		},
-		"ghcr.io/devcontainers/features/github-cli:1": {}
-	},
+	"name": "Startup Profile (Docker)",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "laravel.test",
+	"workspaceFolder": "/var/www/html",
 	"customizations": {
 		"vscode": {
-			"settings": {},
 			"extensions": [
 				"bmewburn.vscode-intelephense-client",
 				"mikestead.dotenv",
@@ -17,6 +14,6 @@
 			]
 		}
 	},
-	"postCreateCommand": "composer install && npm install && cp -n .env.example .env || true && php artisan key:generate && touch database/database.sqlite && php artisan migrate --force",
-	"remoteUser": "vscode"
+	"remoteUser": "sail",
+	"postCreateCommand": "sudo chown -R sail:sail /var/www/html && composer install && npm install && cp -n .env.example .env || true && php artisan key:generate && touch database/database.sqlite && php artisan migrate --force"
 }
